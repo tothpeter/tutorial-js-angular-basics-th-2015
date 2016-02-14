@@ -1,3 +1,7 @@
 .list .item.editing-item .actions {
   margin-top: 17px;
 }
+
+.list .edited {
+  background-color: red;
+}
