@@ -3,10 +3,13 @@ angular.module('todoListApp', [])
   $scope.helloWorld = function() {
     console.log('Hello there from the main ctrl');
   }
-})
 
-.controller('coolCtrl', function($scope) {
-  $scope.whoAmI = function() {
-    console.log('Hello there from the cool ctrl');
-  }
+  $scope.todos = [
+    { name: 'clean the house' },
+    { name: 'water the lawn' },
+    { name: 'feed the dog' },
+    { name: 'pay dem bills' },
+    { name: 'run' },
+    { name: 'swim' }
+  ]
 });
