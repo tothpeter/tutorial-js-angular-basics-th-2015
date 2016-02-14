@@ -9,8 +9,4 @@ angular.module('todoListApp', [])
   $scope.whoAmI = function() {
     console.log('Hello there from the cool ctrl');
   }
-
-  $scope.helloWorld = function() {
-    console.log('Hello there from the cool ctrl ovveriden method');
-  }
 });
