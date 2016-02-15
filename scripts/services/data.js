@@ -7,9 +7,12 @@ angular.module('todoListApp')
     .then(callback);
   };
 
-  this.saveTodo = function(todo) {
-    console.log('The ', todo.name, 'has been saved!');
-    todo.edited = false;
+  this.saveTodos = function(todos) {
+    console.log(todos.length + ' todos have been saved!');
+
+    todos.forEach(function(todo) {
+      todo.edited = false;
+    })
     // Other logic...
   };
 
