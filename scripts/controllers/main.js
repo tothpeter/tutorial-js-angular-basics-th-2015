@@ -4,7 +4,7 @@ angular.module('todoListApp')
 .controller('mainCtrl', function($scope, dataService) {
   $scope.addTodo = function functionName() {
     var todo = {name: 'This is a new todo.'}
-    $scope.todos.push(todo);
+    $scope.todos.unshift(todo);
   };
 
   dataService.getTodos(function(response) {

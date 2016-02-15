@@ -5,3 +5,27 @@
 .list .edited {
   background-color: red;
 }
+
+
+.list .completed label {
+  background-color: green;
+  text-decoration: underline;
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+input[type="checkbox"] + span {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border: 2px solid gray;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + span {
+  background-color: black;
+}
